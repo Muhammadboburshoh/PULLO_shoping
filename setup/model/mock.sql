@@ -29,7 +29,3 @@ insert into products(
 values
   ('Men''s Like Plex', 100, 15, 'running-shoes.png', false, 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
 
-
-/* update products set product_summary = 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-where
-  product_id = 10; */

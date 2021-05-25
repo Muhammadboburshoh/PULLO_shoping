@@ -23,8 +23,3 @@ create table customers_email(
   customer_email varchar(16)
 );
 
-ALTER TABLE products
-ADD product_photo varchar(64) not null;
-
-ALTER TABLE products
-ADD product_new boolean default false;
