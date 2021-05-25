@@ -2,11 +2,11 @@ const { cache } = require('ejs')
 const { Pool } = require('pg')
 
 const pool = new Pool({
-  user: 'muhammadbobur',
-  database: 'pullo',
-  password: '1111',
+  user: 'btlncunu',
+  database: 'btlncunu',
+  password: '5F012shP_A0ZfOdl3y5FcBrHMpH7vaxu',
   port: 5432,
-  host: 'localhost'
+  host: 'batyr.db.elephantsql.com'
 })
 
 const rows = async (SQL, ...params) => {
