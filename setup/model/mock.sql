@@ -16,3 +16,16 @@ values
   ('Sports Shoes', 100, 5, 'shoes-img8.png', false),
   ('Sports Shoes', 90, 5, 'shoes-img9.png', false);
 
+insert into products(
+  product_name,
+  product_price,
+  product_rating,
+  product_photo,
+  product_new
+)
+values
+  ('Men''s Like Plex', 100, 15, 'running-shoes.png', false);
+
+update products set product_summary = 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+where
+  product_id = 10;
