@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const { row, rows } = require("../util/pg")
+const { rows } = require("../util/pg")
 
 const productsSQL = `
   select * from products where product_new = false and product_rating = 5
