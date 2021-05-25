@@ -1,9 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+const { row, rows } = require("../util/pg")
 
-router.get('/', function(req, res, next) {
-  res.render('collection');
+
+const introSQL = `
+  select * from products where product_new = true and product_rating = 5
+`
+
+
+router.get('/', async function(req, res, next) {
+
+  const introProduct = await rows(introSQL)
+
+  res.render('collection', {introProduct});
 });
 
 module.exports = router;

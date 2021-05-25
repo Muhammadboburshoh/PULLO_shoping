@@ -21,7 +21,6 @@ router.get('/', async function(req, res, next) {
   const introProduct = await rows(introSQL)
   const bestProduct = await row(bestProductSQL)
   const products = await rows(productsSQL)
-  console.log(products);
 
   res.render('index', { introProduct, bestProduct, products });
 });

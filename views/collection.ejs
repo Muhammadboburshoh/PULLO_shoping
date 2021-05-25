@@ -73,16 +73,14 @@
     	    		<div class="col-md-6">
     	    			<div class="about-img">
     	    				<button class="new_bt">New</button>
-    	    				<div class="shoes-img"><img src="images/shoes-img1.png"></div>
-    	    				<p class="sport_text">Men Sports</p>
-    	    				<div class="dolar_text">$<strong style="color: #f12a47;">90</strong> </div>
+    	    				<div class="shoes-img"><img src="images/<%=introProduct[0].product_photo  %>"></div>
+    	    				<p class="sport_text"><%= introProduct[0].product_name %> </p>
+    	    				<div class="dolar_text">$<strong style="color: #f12a47;"><%= introProduct[0].product_price %></strong> </div>
     	    				<div class="star_icon">
     	    					<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+											<% for(let i=0; i < introProduct[0].product_rating; i++){ %>
+												<li><a href="#"><img src="images/star-icon.png"></a></li>
+											<% } %> 
     	    					</ul>
     	    				</div>
     	    			</div>
@@ -90,16 +88,14 @@
     	    		</div>
     	    		<div class="col-md-6">
     	    			<div class="about-img2">
-    	    				<div class="shoes-img2"><img src="images/shoes-img2.png"></div>
-    	    				<p class="sport_text">Men Sports</p>
-    	    				<div class="dolar_text">$<strong style="color: #f12a47;">90</strong> </div>
+    	    				<div class="shoes-img2"><img src="images/<%=introProduct[1].product_photo  %>"></div>
+    	    				<p class="sport_text"><%= introProduct[1].product_name %></p>
+    	    				<div class="dolar_text">$<strong style="color: #f12a47;"><%= introProduct[0].product_price %></strong> </div>
     	    				<div class="star_icon">
     	    					<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+											<% for(let i=0; i < introProduct[1].product_rating; i++){ %>
+												<li><a href="#"><img src="images/star-icon.png"></a></li>
+											<% } %> 
     	    					</ul>
     	    				</div>
     	    			</div>
