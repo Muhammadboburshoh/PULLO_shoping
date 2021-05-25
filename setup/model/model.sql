@@ -5,7 +5,9 @@ create table products (
   product_name varchar(64) not null,
   product_price decimal not null,
   product_summary text,
-  product_rating smallint
+  product_rating smallint,
+  product_photo varchar(64) not null,
+  product_new boolean default false
 );
 
 create table opinions (

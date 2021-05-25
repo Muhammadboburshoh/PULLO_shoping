@@ -14,18 +14,22 @@ values
   ('Best Shoes', 900, 5, 'shoes-img6.png', false),
   ('Sports Shoes', 70, 5, 'shoes-img7.png', false),
   ('Sports Shoes', 100, 5, 'shoes-img8.png', false),
-  ('Sports Shoes', 90, 5, 'shoes-img9.png', false);
+  ('Sports Shoes', 90, 5, 'shoes-img9.png', false)
+;
+
 
 insert into products(
   product_name,
   product_price,
   product_rating,
   product_photo,
-  product_new
+  product_new,
+  product_summary
 )
 values
-  ('Men''s Like Plex', 100, 15, 'running-shoes.png', false);
+  ('Men''s Like Plex', 100, 15, 'running-shoes.png', false, 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
 
-update products set product_summary = 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+/* update products set product_summary = 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 where
-  product_id = 10;
+  product_id = 10; */
